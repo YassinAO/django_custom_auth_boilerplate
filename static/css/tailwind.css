@@ -1,0 +1,59 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer components {
+   .form-fields {
+      @apply appearance-none block w-full px-3 py-2 my-1 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm;
+   },
+   .success-bg {
+      @apply bg-green-50 border-l-4 border-green-400 p-4;
+   },
+   .success-text {
+      @apply text-sm text-green-700;
+   },
+   .success-svg {
+      @apply h-5 w-5 text-green-400;
+   },
+   .success-close {
+      @apply inline-flex bg-green-50 rounded-md p-1.5 text-green-500 hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-green-50 focus:ring-green-600
+   },
+   .warning-bg {
+      @apply bg-yellow-50 border-l-4 border-yellow-400 p-4;
+   },
+   .warning-text {
+      @apply text-sm text-yellow-700;
+   },
+   .warning-svg {
+      @apply h-5 w-5 text-yellow-400;
+   },
+   .warning-close {
+      @apply inline-flex bg-yellow-50 rounded-md p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-yellow-50 focus:ring-yellow-600
+   },
+   .danger-bg {
+      @apply bg-red-50 border-l-4 border-red-400 p-4;
+   },
+   .danger-text {
+      @apply text-sm text-red-700;
+   },
+   .danger-svg {
+      @apply h-5 w-5 text-red-400;
+   },
+   .danger-close {
+      @apply inline-flex bg-red-50 rounded-md p-1.5 text-red-500 hover:bg-red-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-red-50 focus:ring-red-600
+   },
+   .info-bg {
+      @apply bg-blue-50 border-l-4 border-blue-400 p-4;
+   },
+   .info-text {
+      @apply text-sm text-blue-700;
+   },
+   .info-svg {
+      @apply h-5 w-5 text-blue-400;
+   },
+   .info-close {
+      @apply inline-flex bg-blue-50 rounded-md p-1.5 text-blue-500 hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-50 focus:ring-blue-600
+   }
+}
