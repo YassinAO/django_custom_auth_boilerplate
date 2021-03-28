@@ -20,11 +20,15 @@ from django.conf.urls.static import static
 from django.urls import path, include
 from django.contrib import admin
 from django.conf import settings
+from decouple import config
 
 
 urlpatterns = [
     path('', include('accounts.urls')),
-    path('admin/', admin.site.urls),
+
+    path('admin/', include('admin_honeypot.urls', namespace='admin_honeypot')),
+    path(config('ADMIN_URL'), admin.site.urls),
+
     path('register/', account_views.register, name='register'),
     path('login/', auth_views.LoginView.as_view(template_name='accounts/login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(template_name='accounts/logout.html'), name='logout'),
